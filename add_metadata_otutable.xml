@@ -1,0 +1,30 @@
+<tool id="Add metadata to otutable" name="Add metadata to otutable">
+<description></description>
+<command interpreter="bash">
+add_metadata_otutable.sh $input_metadata $input_otutable $output $type
+</command>
+
+<inputs>
+<param format="txt" name="input_metadata" type="data" label="Metadata file (BLAST, LCA)"/>
+<param format="txt" name="input_otutable" type="data" label="Otutable"/>
+<param name="type" type="select" multiple="false" label="Metadata input type">
+					<option value="automatic" selected="true">Automatic detection</option>
+					<option value="blast">BLAST</option>
+          <option value="lca">LCA</option>
+				</param>
+</inputs>
+
+
+<outputs>
+	<data format="txt" name="output" label="$input_otutable.display_name metadata" />
+</outputs>
+<tests>
+<test>
+<param name="test_input" value="test_input.txt"/>
+<output name="test_outout" file="test_output.txt"/>
+</test>
+</tests>
+<help>
+
+</help>
+</tool>
