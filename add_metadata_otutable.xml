@@ -1,7 +1,7 @@
 <tool id="Add metadata to otutable" name="Add metadata to otutable">
 <description></description>
 <command interpreter="bash">
-add_metadata_otutable.sh $input_metadata $input_otutable $output $type
+add_metadata_otutable.sh $input_metadata $input_otutable $output $type $fillemptylines
 </command>
 
 <inputs>
@@ -11,12 +11,16 @@ add_metadata_otutable.sh $input_metadata $input_otutable $output $type
 					<option value="automatic" selected="true">Automatic detection</option>
 					<option value="blast">BLAST</option>
           <option value="lca">LCA</option>
+					<option value="translation6andstopcodons">Stop codon count + 6 frame translation</option>
+          <option value="stopcodons">Stop codon count</option>
+					<option value="translation6">6 frame translation</option>
 				</param>
+<param name="fillemptylines" type="boolean" label="Fill otu's with N/A values if not in metadata" checked="yes" truevalue="yes" falsevalue="no"/>
 </inputs>
 
 
 <outputs>
-	<data format="txt" name="output" label="$input_otutable.display_name metadata" />
+	<data format="tabular" name="output" label="$input_otutable.display_name metadata" />
 </outputs>
 <tests>
 <test>
