@@ -1,5 +1,5 @@
 # galaxy-tool-add-metadata-otutable
-The old tool https://github.com/naturalis/galaxy-tool-add-blast-to-otutable will be replaced by this one. This script can add metadata such BLAST or LCA output to an otutable.
+The old tool https://github.com/naturalis/galaxy-tool-add-blast-to-otutable will be replaced by this one. This script can add metadata such as BLAST, LCA and translated output to an otutable.
 
 ## Getting Started
 ### Installing
