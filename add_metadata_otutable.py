@@ -61,12 +61,14 @@ def add_general_to_otutable(metadataDict, metadataHeader, inputType):
             else:
                 if args.naValues == "yes":
                     emptyValue = "\tN/A"
+                    unknownTaxonomy = "unknown / unknown / unknown / unknown / unknown / unknown / unknown"
                 else:
                     emptyValue = "\t"
+                    unknownTaxonomy = ""
 
                 if inputType == "blast":
                     naString = 8*emptyValue
-                    output.write(line.strip() +"\t"+line.split("\t")[0]+naString+"\tunknown / unknown / unknown / unknown / unknown / unknown / unknown\n")
+                    output.write(line.strip() +"\t"+line.split("\t")[0]+naString+"\t"+unknownTaxonomy+"\n")
                 elif inputType == "lca":
                     naString = 10*emptyValue
                     output.write(line.strip() +"\t"+line.split("\t")[0]+naString+"\n")
