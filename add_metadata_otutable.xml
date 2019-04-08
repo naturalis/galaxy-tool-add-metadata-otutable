@@ -1,7 +1,12 @@
 <tool id="Add metadata to otutable" name="Add metadata to otutable">
 <description></description>
-<command interpreter="bash">
-add_metadata_otutable.sh $input_metadata $input_otutable $output $type $fillemptylines
+    <requirements>
+        <requirement type="package" version="2.7">python</requirement>
+    </requirements>
+<command>
+<![CDATA[
+bash '$__tool_directory__/add_metadata_otutable.sh' $input_metadata $input_otutable $output $type $fillemptylines
+]]>
 </command>
 
 <inputs>
