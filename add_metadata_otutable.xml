@@ -34,6 +34,8 @@ bash '$__tool_directory__/add_metadata_otutable.sh' $input_metadata $input_otuta
 </test>
 </tests>
 <help>
-
+**Add metadata (BLAST, LCA, translated output) to otu-table** &#xA;
+Marten Hoogeveen, 2019. &#xA;
+https://github.com/naturalis/galaxy-tool-add-metadata-otutable
 </help>
 </tool>
