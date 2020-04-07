@@ -1,7 +1,7 @@
 <tool id="Add metadata to otutable" name="Add metadata to otutable">
 <description></description>
     <requirements>
-        <requirement type="package" version="2.7">python</requirement>
+        <requirement type="package" version="3.8.2">python</requirement>
     </requirements>
 <command>
 <![CDATA[
