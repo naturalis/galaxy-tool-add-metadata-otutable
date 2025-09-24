@@ -1,4 +1,4 @@
-<tool id="Add metadata to otutable" name="Add metadata to otutable">
+<tool id="Add metadata to otutable" name="Add metadata to otutable" version="1.0">
 <description></description>
     <requirements>
         <requirement type="package" version="3.8.2">python</requirement>

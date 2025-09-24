@@ -1,0 +1,13 @@
+name: naturalis_add_metadata_otutable
+owner:  duijker.d
+description: "Add metadata such as BLAST, LCA and translated output to an otutable." 
+long_description: |
+  "Add metadata such as BLAST, LCA and translated output to an otutable.".
+remote_repository_url: https://github.com/naturalis/galaxy-tool-add-metadata-otutable.git
+homepage_url: https://github.com/naturalis/galaxy-tool-add-metadata-otutable.git
+type: unrestricted
+categories:
+   - "Sequence Analysis"
+auto_tool_repositories:
+  name_template: naturalis_add_metadata_otutable
+  description_template: naturalis_add_metadata_otutable
