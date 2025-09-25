@@ -1,5 +1,5 @@
 name: naturalis_add_metadata_otutable
-owner:  duijker.d
+owner:  luka
 description: "Add metadata such as BLAST, LCA and translated output to an otutable." 
 long_description: |
   "Add metadata such as BLAST, LCA and translated output to an otutable.".
@@ -11,3 +11,5 @@ categories:
 auto_tool_repositories:
   name_template: naturalis_add_metadata_otutable
   description_template: naturalis_add_metadata_otutable
+
+  
